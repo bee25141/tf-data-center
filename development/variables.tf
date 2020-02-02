@@ -19,7 +19,7 @@ variable "environment" {
   
 }
 
-variable "key_value" {
+variable "key_name" {
 
      type = string
      description = "The AWS key pair to use for resources"
@@ -45,6 +45,6 @@ variable "private_subnets" {
 
     type = list(string)
     default = []
-    description = "The list of private suvnets to populate"
+    description = "The list of private subnets to populate"
   
 }

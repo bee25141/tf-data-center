@@ -1,10 +1,10 @@
-region = "us-east=1"
+region = "us-east-1"
 
 prefix = "example.com"
 
 environment = "development"
 
-key_name = "james"
+key_name = "tfb"
 
 vpc_cidr = "10.0.0.0/16"
 
