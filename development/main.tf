@@ -4,6 +4,15 @@ provider "aws" {
   
 }
 
+terraform {
+
+    backend "s3" {
+        region = "us-east-1"
+        bucket = "examplecom-tb-remote-state-development"
+        key = "terraform.tfstate"
+    }
+}
+
 module "vpc" {
 
   source = "github.com/turnbullpress/tf_vpc.git?ref=v0.0.4"
