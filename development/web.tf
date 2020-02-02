@@ -29,7 +29,7 @@ provider "cloudflare" {
 }
 
 module "web" {
-  source = "https://github.com/bee25141/web-service-module"
+  source = "github.com/bee25141/web-service-module"
   environment = var.environment
   vpc_id = module.vpc.vpc_id
   public_subnet_ids = module.vpc.public_subnet_ids
