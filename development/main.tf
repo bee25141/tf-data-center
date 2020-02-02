@@ -6,7 +6,7 @@ provider "aws" {
 
 module "vpc" {
 
-  source = "https://github.com/bee25141/terraform_vpc.git"
+  source = "github.com/turnbullpress/tf_vpc.git?ref=v0.0.4"
   environment = var.environment
   region = var.region
   key_name = var.key_name
